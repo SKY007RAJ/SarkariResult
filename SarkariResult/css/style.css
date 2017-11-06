@@ -1,12 +1,14 @@
-*{
-
-}
 
 .container .jumbotron {
 	color: #fff;
 	background-color: #B0003A;
 	margin-bottom: 0;
 	border-radius: 0;
+}
+.icons{
+	color: white;
+	font-size:1.6em;
+	margin:5px;
 }
 
 /*#menu{
