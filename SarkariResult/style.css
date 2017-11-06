@@ -1,0 +1,80 @@
+*{
+
+}
+
+.container .jumbotron {
+	color: #fff;
+	background-color: #B0003A;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/*#menu{
+	
+	font-size: 1.2em;
+	background-color: black;}*/
+.navbar-default {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a{
+
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+ .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B0003A;
+
+}
+   /*center menu after collapsed*/
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.alert-danger{
+	border-radius: 0;
+	border: 0;
+	margin:0;
+
+}
+
+.tiles{
+	font-size: 1.6em;
+	color: white;
+	font-weight: bold;
+
+}
+.col-md-3{
+	padding:8px;
+	
+}
+/*Collapsed menu in bootstrap with multiple columns*/
+
+@media (max-width: 768px){
+.navbar-nav>li {
+    float: left;
+    width: 50%;
+}
+}
+@media (max-width: 768px){
+  .container {
+    margin:0;
+    padding: 0;
+
+  }
+
+  /*make all column same height*/
+  .row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
