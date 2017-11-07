@@ -1,16 +1,18 @@
-
+p{
+	margin: 15px; 
+}
 .container .jumbotron {
 	color: #fff;
 	background-color: #B0003A;
 	margin-bottom: 0;
 	border-radius: 0;
 }
+
 .icons{
 	color: white;
-	font-size:1.6em;
+	font-size: 1.6em;
 	margin:5px;
 }
-
 /*#menu{
 	
 	font-size: 1.2em;
@@ -19,7 +21,6 @@
     border-radius: 0;
     margin-bottom: 0;
 }
-
 .navbar-default .navbar-nav > li > a{
 
 	font-size: 1.2em;
@@ -43,33 +44,112 @@
 	border-radius: 0;
 	border: 0;
 	margin:0;
+	padding: 10px;
 
 }
 
+#Marquee{
+	font-size: 1.2em;
+	padding: 8px;
+
+}
+#Marquee>a{
+	text-decoration: none;
+}
+#Marquee>a:hover, #Marquee>a:focus{
+	color:#B0003A;
+}
+#Marquee>strong{
+	color: #337ab7;
+}
 .tiles{
 	font-size: 1.6em;
 	color: white;
 	font-weight: bold;
 
 }
-.col-md-3{
-	padding:8px;
-	
-}
-/*Collapsed menu in bootstrap with multiple columns*/
 
-@media (max-width: 768px){
+
+.column{
+	border: 2px solid #B0003A;
+	margin-left: -15px;
+
+}
+ .link-box{
+ 	margin-top: 15px;
+ }
+.link-box h2{
+	background-color:#B0003A;
+	color: white;
+	padding: 10px;
+	margin: 0;
+
+
+}
+.link-box ul{
+	padding:20px;
+	font-size: 1.2em;
+	margin-left: 8px;
+}
+.link-box ul li{
+	padding: 5px;
+}
+.link-box a{
+	text-decoration: none;
+}
+.link-box a:hover, .link-box a:focus{
+	color:#B0003A;}
+
+
+/*
+[class*="col-"]{
+    margin: 0;
+    padding: 0;
+}
+
+
+*/.wrapper{
+	  margin-left: -15px;
+	  border: 2px solid #B0003A;
+}
+.last{
+	margin-right:-15px;
+}
+@media(max-width:   991px){
+	.even{
+		margin-right:-15px;
+		margin-left: 0;
+	}
+	.last{
+		margin-right: 0;
+	}
+}
+
+
+/*Collapsed menu in bootstrap with multiple columns*/
+@media (max-width:  768px){
 .navbar-nav>li {
     float: left;
     width: 50%;
 }
+
+
 }
-@media (max-width: 768px){
-  .container {
-    margin:0;
+
+	
+
+
+
+@media(max-width: 768px){
+ .container{
     padding: 0;
 
   }
+  .wrapper{
+  	margin-left: -15px;
+  	margin-right: -15px;
+  }
+}
 
   /*make all column same height*/
   .row{
@@ -79,4 +159,8 @@
 [class*="col-"]{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+    border: 4px solid #fff;
 }
+
+
+/*Adding Smooth Marquee*/
