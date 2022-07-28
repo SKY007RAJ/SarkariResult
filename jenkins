@@ -16,7 +16,7 @@ pipeline {
 //    stage ('Trufflehog-Secret-Check') {
 //      steps {
 //          sh 'rm trufflehog_output.txt || true'
-//          sh 'docker run gesellix/trufflehog --json https://github.com/siddkhewal007/webapp.git > trufflehog_output.txt'
+//          sh 'docker run gesellix/trufflehog --json https://github.com/SKY007RAJ/SarkariResult.git > trufflehog_output.txt'
 //          sh 'cat trufflehog_output.txt'
 //    }
 //    }
@@ -35,7 +35,7 @@ pipeline {
     stage ('Deploy-To-Tomcat') {
             steps {
            sshagent(['tomcat']) {
-                sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@54.75.208.116:/opt/tomcat/apache-tomcat-9.0.65/webapps/webapp.war'
+                sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@3.110.189.51:/opt/tomcat/apache-tomcat-9.0.65/webapps/webapp.war'
               }      
            }       
     }
